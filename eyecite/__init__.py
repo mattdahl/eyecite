@@ -9,3 +9,12 @@ __all__ = [
     "clean_text",
     "resolve_citations"
 ]
+
+# No need to create API documentation for these internal helper functions
+__pdoc__ = {
+    'annotate.SpanUpdater': False,
+    'helpers': False,
+    'regexes': False,
+    'test_factories': False,
+    'utils': False
+}
